@@ -7,6 +7,7 @@ import img_2 from '../assets/voitures/2.jpg'
 import img_3 from '../assets/voitures/3.jpg'
 import img_4 from '../assets/voitures/4.jpg'
 import img_5 from '../assets/voitures/5.jpg'
+import Card from '../composants/Card';
 
 const Home = ({ navigation }) => {
     const data = [
@@ -35,6 +36,10 @@ const Home = ({ navigation }) => {
                 layout="default"
                 loop
             />
+
+        <View style={{flex:1, justifyContent:'center'}}>
+            <Card title={data[0].img} img={data[0].src} description={' Prix de ce véhicule de luxe : 2 millions d’euros.'}/>
+        </View>
         </View>
     );
 }
