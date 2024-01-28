@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Login from '../src/screens/Login';
 import Sign from '../src/screens/Sign';
 import Home from '../src/screens/Home';
+import CarInfo from '../src/composants/CarInfo';
 
 const Navigation = () => {
 
@@ -17,6 +18,7 @@ const Navigation = () => {
                 <Stack.Screen name='connexion' component={Login} />
                 <Stack.Screen name='inscription' component={Sign} />
                 <Stack.Screen name='Home' component={Home} />
+                <Stack.Screen name='carInfo' component={CarInfo} />
             </Stack.Navigator>
         </NavigationContainer>
     );
