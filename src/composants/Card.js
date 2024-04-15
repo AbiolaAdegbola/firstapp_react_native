@@ -2,7 +2,7 @@ import React from 'react';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-const Card = ({ img, title, description,star }) => {
+const Card = ({ img, title, description, star }) => {
 
     return (
         <View style={styles.card} >
